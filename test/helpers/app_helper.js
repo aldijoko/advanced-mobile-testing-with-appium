@@ -3,7 +3,6 @@ import { $, $$, driver } from '@wdio/globals'
 const APP_PACKAGE = 'com.swaglabsmobileapp'
 
 class AppHelper {
-    // Clears app data so every test starts from a logged out login page.
     async launchCleanApp() {
         await driver.terminateApp(APP_PACKAGE)
         await driver.execute('mobile: clearApp', { appId: APP_PACKAGE })
