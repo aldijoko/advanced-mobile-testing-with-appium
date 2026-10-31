@@ -1,0 +1,64 @@
+﻿
+> advanced-mobile-testing-with-appium@1.0.0 prewdio
+> npm run device
+
+
+> advanced-mobile-testing-with-appium@1.0.0 device
+> powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-device.ps1
+
+[device] adb server already running
+[device] emulator already running
+[device] ready
+List of devices attached
+emulator-5554	device
+
+> advanced-mobile-testing-with-appium@1.0.0 wdio
+> wdio run ./wdio.conf.js
+
+
+Execution of 3 workers started at 2026-10-31T17:24:55.944Z
+
+[0-0] RUNNING in Android(12) on Android - file:///D:/QA%20Mobile%20Automation/advanced-mobile-testing-with-appium/test/specs/login.spec.js
+[0-0] PASSED in Android(12) on Android - file:///D:/QA%20Mobile%20Automation/advanced-mobile-testing-with-appium/test/specs/login.spec.js
+[0-1] RUNNING in Android(12) on Android - file:///D:/QA%20Mobile%20Automation/advanced-mobile-testing-with-appium/test/specs/logout.spec.js
+[0-1] PASSED in Android(12) on Android - file:///D:/QA%20Mobile%20Automation/advanced-mobile-testing-with-appium/test/specs/logout.spec.js
+[0-2] RUNNING in Android(12) on Android - file:///D:/QA%20Mobile%20Automation/advanced-mobile-testing-with-appium/test/specs/sorting.spec.js
+[0-2] PASSED in Android(12) on Android - file:///D:/QA%20Mobile%20Automation/advanced-mobile-testing-with-appium/test/specs/sorting.spec.js
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[./app/sauce-demo.apk Android #0-0] Running: ./app/sauce-demo.apk on Android
+[./app/sauce-demo.apk Android #0-0] Session ID: 82178305-fcac-4919-b1ea-7d4e68961cea
+[./app/sauce-demo.apk Android #0-0]
+[./app/sauce-demo.apk Android #0-0] » test\specs\login.spec.js
+[./app/sauce-demo.apk Android #0-0] Login
+[./app/sauce-demo.apk Android #0-0]    ✓ should login successfully with a valid user
+[./app/sauce-demo.apk Android #0-0]    ✓ should fail to login with an invalid user
+[./app/sauce-demo.apk Android #0-0]    ✓ should fail to login with a locked out user
+[./app/sauce-demo.apk Android #0-0]
+[./app/sauce-demo.apk Android #0-0] 3 passing (19.8s)
+------------------------------------------------------------------
+[./app/sauce-demo.apk Android #0-1] Running: ./app/sauce-demo.apk on Android
+[./app/sauce-demo.apk Android #0-1] Session ID: fbb6a8ce-79c5-43d1-a3ff-edd76c83b0bc
+[./app/sauce-demo.apk Android #0-1]
+[./app/sauce-demo.apk Android #0-1] » test\specs\logout.spec.js
+[./app/sauce-demo.apk Android #0-1] Logout
+[./app/sauce-demo.apk Android #0-1]    ✓ should logout and return to the login page
+[./app/sauce-demo.apk Android #0-1]
+[./app/sauce-demo.apk Android #0-1] 1 passing (10.9s)
+------------------------------------------------------------------
+[./app/sauce-demo.apk Android #0-2] Running: ./app/sauce-demo.apk on Android
+[./app/sauce-demo.apk Android #0-2] Session ID: 7da51470-76bf-4765-bbdc-2e2f5bcc4b47
+[./app/sauce-demo.apk Android #0-2]
+[./app/sauce-demo.apk Android #0-2] » test\specs\sorting.spec.js
+[./app/sauce-demo.apk Android #0-2] Sorting products
+[./app/sauce-demo.apk Android #0-2]    ✓ should sort products by name from A to Z
+[./app/sauce-demo.apk Android #0-2]    ✓ should sort products by name from Z to A
+[./app/sauce-demo.apk Android #0-2]    ✓ should sort products by price from low to high
+[./app/sauce-demo.apk Android #0-2]    ✓ should sort products by price from high to low
+[./app/sauce-demo.apk Android #0-2]
+[./app/sauce-demo.apk Android #0-2] 4 passing (34.8s)
+
+
+Spec Files:	 3 passed, 3 total (100% completed) in 00:01:24  
+

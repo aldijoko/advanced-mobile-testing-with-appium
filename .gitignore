@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Generated test reports
+allure-results/
+allure-report/
+
+# Logs (except the evidence for the assignment)
+*.log
+!evidence/*.log
+
+# Local environment
+.env
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
